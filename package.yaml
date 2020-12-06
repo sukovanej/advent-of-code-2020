@@ -22,6 +22,9 @@ description:         Please see the README on GitHub at <https://github.com/gith
 dependencies:
 - base >= 4.7 && < 5
 - split
+- text
+- tasty
+- tasty-hunit
 
 library:
   source-dirs: src
@@ -47,3 +50,5 @@ tests:
     - -with-rtsopts=-N
     dependencies:
     - adventofcode2020
+    - tasty
+    - tasty-hunit

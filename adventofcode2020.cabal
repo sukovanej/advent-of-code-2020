@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: c7b518d0c3e75d492455066a8b755bb8fd323e414d4f0fd992ac09a50d11d034
+-- hash: d6d3d92531080eb187471c8a8be7680a2072cf14f584ea76fd6c041734ae6a8f
 
 name:           adventofcode2020
 version:        0.1.0.0
@@ -27,11 +27,14 @@ source-repository head
 
 library
   exposed-modules:
+      Day4
+      Day5
       Lib
       Puzzle1
       Puzzle2
       Puzzle3
       Puzzle4
+      Puzzle5
   other-modules:
       Paths_adventofcode2020
   hs-source-dirs:
@@ -39,6 +42,9 @@ library
   build-depends:
       base >=4.7 && <5
     , split
+    , tasty
+    , tasty-hunit
+    , text
   default-language: Haskell2010
 
 executable adventofcode2020-exe
@@ -52,12 +58,17 @@ executable adventofcode2020-exe
       adventofcode2020
     , base >=4.7 && <5
     , split
+    , tasty
+    , tasty-hunit
+    , text
   default-language: Haskell2010
 
 test-suite adventofcode2020-test
   type: exitcode-stdio-1.0
   main-is: Spec.hs
   other-modules:
+      Day4Spec
+      Day5Spec
       Paths_adventofcode2020
   hs-source-dirs:
       test
@@ -66,4 +77,7 @@ test-suite adventofcode2020-test
       adventofcode2020
     , base >=4.7 && <5
     , split
+    , tasty
+    , tasty-hunit
+    , text
   default-language: Haskell2010

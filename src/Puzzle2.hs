@@ -1,4 +1,4 @@
-module Puzzle1 () where
+module Puzzle2 () where
 
 inputFileName = "./data/puzzle_1.txt"
 
