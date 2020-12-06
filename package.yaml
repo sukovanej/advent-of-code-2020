@@ -25,6 +25,7 @@ dependencies:
 - text
 - tasty
 - tasty-hunit
+- containers
 
 library:
   source-dirs: src
@@ -39,6 +40,9 @@ executables:
     - -with-rtsopts=-N
     dependencies:
     - adventofcode2020
+    - containers
+    - text
+    - split
 
 tests:
   adventofcode2020-test:

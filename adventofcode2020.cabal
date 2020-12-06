@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: d6d3d92531080eb187471c8a8be7680a2072cf14f584ea76fd6c041734ae6a8f
+-- hash: 972e69db5def58158694110a697159acc31a23e0a478e7dee5cff608baeb22f3
 
 name:           adventofcode2020
 version:        0.1.0.0
@@ -29,6 +29,7 @@ library
   exposed-modules:
       Day4
       Day5
+      Day6
       Lib
       Puzzle1
       Puzzle2
@@ -41,6 +42,7 @@ library
       src
   build-depends:
       base >=4.7 && <5
+    , containers
     , split
     , tasty
     , tasty-hunit
@@ -57,6 +59,7 @@ executable adventofcode2020-exe
   build-depends:
       adventofcode2020
     , base >=4.7 && <5
+    , containers
     , split
     , tasty
     , tasty-hunit
@@ -76,6 +79,7 @@ test-suite adventofcode2020-test
   build-depends:
       adventofcode2020
     , base >=4.7 && <5
+    , containers
     , split
     , tasty
     , tasty-hunit
